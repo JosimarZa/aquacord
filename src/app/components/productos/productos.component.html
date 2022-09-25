@@ -1,0 +1,37 @@
+
+<app-nav-admi></app-nav-admi>
+
+<div class="container mt-5">
+  <div>
+    <h1 class="d-inline mr-3">Lista De Producto</h1>
+    <hr>
+  </div>
+  <div>
+    <table class="table table-hover ">
+      <thead class="bg-info">
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Nombre</th>
+          <th scope="col">Categoria</th>
+          <th scope="col">Estado</th>
+          <th scope="col">Admi</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let pro of producto; index as i">
+          <th scope="row">{{i+1}}</th>
+          <td>{{pro.nombre}}</td>
+          <td>{{pro.categoria}}</td>
+          <td>{{pro.disponible}}</td>
+          <td>@mdo</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+
+</div>
+
+
+
+

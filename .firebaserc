@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "aquacor-d1bec"
+  },
+  "targets": {
+    "aquacor-d1bec": {
+      "hosting": {
+        "aquacord": [
+          "aquacor-d1bec"
+        ]
+      }
+    }
+  }
+}

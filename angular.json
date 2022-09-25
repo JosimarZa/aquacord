@@ -29,11 +29,9 @@
             "styles": [
               "src/styles.css",
               "src/assets/fontawesome/css/all.min.css"
-
             ],
             "scripts": [
               "src/assets/fontawesome/js/all.min.js"
-
             ]
           },
           "configurations": {
@@ -102,6 +100,16 @@
               "src/styles.css"
             ],
             "scripts": []
+          }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "aquacord:build:production",
+            "firebaseProject": "aquacor-d1bec",
+            "firebaseHostingSite": "aquacor-d1bec"
           }
         }
       }

@@ -1,0 +1,41 @@
+
+.nav-x{
+  background: #000;
+  width: 100%;
+  height: 500px;
+  margin: 25px 25px 25px 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.nav-x div{
+  background: greenyellow;
+  width: 300px;
+  height: 300px;
+  margin-right: 100px;
+
+}
+
+.nav-x div a {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.container{
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img{
+  width: 300px;
+  height: 200px;
+}

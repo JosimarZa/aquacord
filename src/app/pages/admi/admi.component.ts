@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { NgForm } from '@angular/forms';
+import { ProductoModel } from 'src/app/model/producto.model';
+import { ProductoService } from 'src/app/services/producto.service';
+
 
 @Component({
   selector: 'app-admi',
@@ -7,7 +11,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AdmiComponent implements OnInit {
 
-  constructor() { }
+  producto =  new ProductoModel();
+
+  constructor(private productoServices:ProductoService) {
+
+
+
+  }
+
+
 
   ngOnInit(): void {
   }

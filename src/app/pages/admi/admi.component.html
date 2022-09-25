@@ -1,54 +1,7 @@
-<div class="container mt-5 mb-5">
-  <ul class="nav nav-tabs" id="myTab" role="tablist">
-    <li class="nav-item" role="presentation">
-      <button class="nav-link active" id="agregar-tab" data-toggle="tab" data-target="#agregar" type="button" role="tab" aria-controls="home" aria-selected="true">Agregar</button>
-    </li>
-    <li class="nav-item" role="presentation">
-      <button class="nav-link" id="profile-tab" data-toggle="tab" data-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Profile</button>
-    </li>
-    <li class="nav-item" role="presentation">
-      <button class="nav-link" id="contact-tab" data-toggle="tab" data-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Contact</button>
-    </li>
-  </ul>
-  <div class="tab-content border mt-2" id="myTabContent">
-    <div class="tab-pane fade show active bg-light" id="agregar" role="tabpanel" aria-labelledby="agregar-tab">
-      <form class="px-5 py-3">
-        <div class="form-group">
-          <label for="exampleFormControlInput1">Codigo</label>
-          <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Codigo Del Producto">
-        </div>
-        <div class="form-group">
-          <label for="exampleFormControlInput1">Nombre</label>
-          <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nombre Del Producto">
-        </div>
-        <div class="form-group">
-          <label for="exampleFormControlSelect1">Categoria</label>
-          <select class="form-control" id="exampleFormControlSelect1">
-            <option>Picisina</option>
-            <option>Aseo</option>
-            <option>Seguridad Industrial</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <label for="exampleFormControlSelect1">Disponible</label>
-          <select class="form-control" id="exampleFormControlSelect1">
-            <option>SI</option>
-            <option>NO</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <label for="exampleFormControlTextarea1">Descripcion</label>
-          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-        </div>
-          <div class="form-group">
-            <label for="exampleFormControlFile1">Subir Imagen</label>
-            <input type="file" class="form-control-file" id="exampleFormControlFile1">
-          </div>
-          <button type="submit" class="btn btn-success btn-lg btn-block">Agregar Producto</button>
-      </form>
-    </div>
-    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
-    <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
-  </div>
 
+<app-nav-admi></app-nav-admi>
+
+<div class="container">
+  <img src="/assets/img/logo-1.png" alt="">
+  <router-outlet></router-outlet>
 </div>
